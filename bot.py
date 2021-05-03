@@ -1,6 +1,7 @@
 import math
 import time
 from sensors import SENSORS
+import requests
 
 
 class Bot:
@@ -66,8 +67,15 @@ class Bot:
 
     def send_all_values(self) -> None:
         """Send last measured values to server"""
-        for sensor in self.sensors:
-            sensor.send_current_value()
+        values = ''
+        for num, sensor in enumerate(self.sensors):
+            values += f'&field{num+1}={sensor.current_value}'
+        url = f'https://api.thingspeak.com/update?api_key={self.api_key}{values}'
+        r = requests.get(url)
+        print(f'url: {url}')
+        print(f'status code: {r.status_code}')
+        print(f'text: {r.text}')
+        print('____________________________________________________________')
 
     def start(self) -> None:
         """Measure and send all values during working time"""

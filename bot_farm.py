@@ -47,4 +47,4 @@ class BotFarm:
 
             for bot in self.bots:
                 bot.start()
-            time.sleep(10)
+            time.sleep(20)
