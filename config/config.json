@@ -1,0 +1,47 @@
+{
+  "bots": [
+    {
+      "email": "ecomoniot3@gmail.com",
+      "channel": "1",
+      "bot_name": "bot_1",
+      "update_time": "300",
+      "sensors": [
+        {
+          "temperature": {
+            "api_key": "111",
+            "min_val": "-40",
+            "max_val": "50",
+            "season": "summer"
+          }
+        },
+        {
+          "humidity": {
+            "api_key": "111",
+            "min_val": "0",
+            "max_val": "100"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot3@gmail.com",
+      "channel": "2",
+      "bot_name": "bot_2",
+      "sensors": [
+        {
+          "temperature": {
+            "min_val": "-40",
+            "max_val": "50",
+            "season": "summer"
+          }
+        },
+        {
+          "humidity": {
+            "min_val": "0",
+            "max_val": "100"
+          }
+        }
+      ]
+    }
+  ]
+}
