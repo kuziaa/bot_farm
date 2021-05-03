@@ -13,29 +13,32 @@ TENDS = {
 
 
 class Sensor:
+    """Sensor measure and send value of air parameter"""
 
-    def __init__(self, sensor_config):
+    def __init__(self, sensor_config: dict, api_key: str) -> None:
         self.sensor_config = sensor_config
+        self.api_key = api_key
         self.check_config()
-        self.api_key = self.sensor_config['api_key']
-        self.field_num = self.sensor_config['field_num']
+        self.field_num = self.sensor_config['field']
         self.current_value = 0
 
-    def measure(self):
-        raise Exception("Current method must be overridden in child classes ")
+    # def measure(self):
+    #     raise Exception("Current method must be overridden in child classes ")
 
     def send_current_value(self):
         print(self._url)
         r = requests.get(self._url)
         print(f'r.status_code = {r.status_code}')
+        print(f'r.text = {r.text}')
         print("__________________________________________________________________________")
+        time.sleep(10)
 
     @property
     def _url(self):
-        return f'https://api.thingspeak.com/update?api_key={self.api_key}${self.field_num}={self.current_value}'
+        return f'https://api.thingspeak.com/update?api_key={self.api_key}&{self.field_num}={self.current_value}'
 
     def check_config(self):
-        mandatory_keys = ['api_key', 'field_num']
+        mandatory_keys = ['field']
 
         assert isinstance(self.sensor_config, dict), f"Incorrect config file. Must be dict, but now:" \
                                                      f" {type(self.sensor_config)}"
@@ -46,12 +49,13 @@ class Sensor:
 
 class TemperatureSensor(Sensor):
 
-    def __init__(self, sensor_config):
-        super().__init__(sensor_config)
+    def __init__(self, sensor_config, api_key):
+        super().__init__(sensor_config, api_key)
         self.min_value = self._min_value
         self.max_value = self._max_value
         self.current_value = self._start_value
         self.tend = self._start_tend
+        print(2)
 
     @property
     def _min_value(self):
@@ -71,30 +75,30 @@ class TemperatureSensor(Sensor):
         return self.sensor_config['tend'] if 'tend' in self.sensor_config.keys() else 'normal'
 
     def change_tend(self):
-        self.tend = random.choice(list(TENDS - {self.tend, }))
+        self.tend = random.choice(list(TENDS - {self.tend}))
 
     @property
     def delta_temperature(self):
         if self.tend == 'fast_decrease':
-            return round(random.uniform(-2, -0.5), 2)
+            return random.uniform(-2, -0.5)
 
         if self.tend == 'decrease':
-            return round(random.uniform(-1, -0.1), 2)
+            return random.uniform(-1, -0.1)
 
         if self.tend == 'normal':
-            return round(random.uniform(-0.5, 0.5), 2)
+            return random.uniform(-0.5, 0.5)
 
         if self.tend == 'increase':
-            return round(random.uniform(0.1, 1), 2)
+            return random.uniform(0.1, 1)
 
         if self.tend == 'fast_increase':
-            return round(random.uniform(0.5, 2), 2)
+            return random.uniform(0.5, 2)
 
     def measure(self):
         if time.time() - self.set_tend_time > 28800:
             self.change_tend()
 
-        new_value = self.current_value + self.delta_temperature
+        new_value = round(self.current_value + self.delta_temperature, 2)
         if new_value > self.max_value:
             new_value = self.max_value
         elif new_value < self.min_value:

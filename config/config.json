@@ -4,21 +4,22 @@
       "email": "ecomoniot3@gmail.com",
       "channel": "1",
       "bot_name": "bot_1",
-      "update_time": "300",
+      "api_key": "JP8A6VDLKRU2KQY6",
       "sensors": [
         {
           "temperature": {
-            "api_key": "111",
+            "field": "field1",
             "min_val": "-40",
             "max_val": "50",
             "season": "summer"
           }
         },
         {
-          "humidity": {
-            "api_key": "111",
-            "min_val": "0",
-            "max_val": "100"
+          "temperature": {
+            "field": "field2",
+            "min_val": "20",
+            "max_val": "40",
+            "season": "summer"
           }
         }
       ]
@@ -27,18 +28,21 @@
       "email": "ecomoniot3@gmail.com",
       "channel": "2",
       "bot_name": "bot_2",
+      "api_key": "HVUV81I0YDXVBRUH",
       "sensors": [
         {
           "temperature": {
+            "field": "field1",
             "min_val": "-40",
             "max_val": "50",
             "season": "summer"
           }
         },
         {
-          "humidity": {
+          "temperature": {
+            "field": "field2",
             "min_val": "0",
-            "max_val": "100"
+            "max_val": "20"
           }
         }
       ]
