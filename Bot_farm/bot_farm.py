@@ -3,7 +3,7 @@ import time
 
 
 class BotFarm:
-    """A bot farm simulates Air Quality Monitoring system.
+    """A bot farm simulates Air Quality Monitoring System.
     Bot farm contain from bots (tne number according to config file.
 
     bot_farm_config : {'bots': [bot1_conf, ..., bot32_conf, ...]}
