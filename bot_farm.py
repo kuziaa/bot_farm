@@ -27,8 +27,8 @@ class BotFarm:
 
     def _check_bot_farm_config(self) -> None:
         """Check if config file was created correct"""
-
         mandatory_keys = ['bots']
+
         assert isinstance(self.bot_farm_config, dict), f"Incorrect bot_farm config file. Must be dict but now: \
             {type(self.bot_farm_config)}"
 
@@ -38,13 +38,26 @@ class BotFarm:
     def _bots_initialization(self) -> None:
         """Initialization all bots with their configs"""
 
+        assert isinstance(self.bots_configs, list), f"Incorrect bot_farm config file. bot_farm_config['bots'] " \
+                                                    f"must be dict, but now: {type(self.bots_configs)}"
+
         for bot_config in self.bots_configs:
             self.bots.append(Bot(bot_config))
 
     def start(self) -> None:
         """Turn on all bots in farm. Start to measure parameters and send on server"""
-        while True:
 
+        while True:
+            timetable = []
             for bot in self.bots:
-                bot.start()
-            time.sleep(20)
+                timetable.append(bot.next_send_time)
+
+            val, idx = min((val, idx) for (idx, val) in enumerate(timetable))
+            sleep_time = val - time.time()
+
+            if sleep_time > 0:
+                time.sleep(sleep_time)
+            self.bots[idx].start()
+
+
+

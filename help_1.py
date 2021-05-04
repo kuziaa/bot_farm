@@ -1,7 +1,3 @@
-import random
-x = "sdsdsd"
-y = {"sdsdsd", "fffff"}
+import time
 
-x = random.choice({'a', 'b', 'c'})
-
-print(type(x))
+print(type(time.time()))

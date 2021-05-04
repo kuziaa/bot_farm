@@ -5,21 +5,50 @@
       "channel": "1",
       "bot_name": "bot_1",
       "api_key": "JP8A6VDLKRU2KQY6",
+      "update_time": "60",
       "sensors": [
         {
           "temperature": {
             "field": "field1",
             "min_val": "-40",
             "max_val": "50",
-            "season": "summer"
+            "tend": "normal",
+            "start_value": "25"
           }
         },
         {
-          "temperature": {
-            "field": "field2",
-            "min_val": "20",
-            "max_val": "40",
-            "season": "summer"
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
           }
         }
       ]
@@ -29,20 +58,1520 @@
       "channel": "2",
       "bot_name": "bot_2",
       "api_key": "HVUV81I0YDXVBRUH",
+      "update_time": "60",
       "sensors": [
         {
           "temperature": {
             "field": "field1",
             "min_val": "-40",
             "max_val": "50",
-            "season": "summer"
+            "tend": "normal",
+            "start_value": "25"
           }
         },
         {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot3@gmail.com",
+      "channel": "3",
+      "bot_name": "bot_3",
+      "api_key": "M350FZENT2PZLG5Y",
+      "update_time": "60",
+      "sensors": [
+        {
           "temperature": {
-            "field": "field2",
-            "min_val": "0",
-            "max_val": "20"
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot3@gmail.com",
+      "channel": "4",
+      "bot_name": "bot_4",
+      "api_key": "IL750ZFBN8WXI0KQ",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot5@gmail.com",
+      "channel": "1",
+      "bot_name": "bot_5",
+      "api_key": "WXM8R2JX2CLH0PN5",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot5@gmail.com",
+      "channel": "2",
+      "bot_name": "bot_6",
+      "api_key": "4JE70CB8VX428LCP",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot5@gmail.com",
+      "channel": "3",
+      "bot_name": "bot_7",
+      "api_key": "HHQ1T61XRTTHIQOI",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot5@gmail.com",
+      "channel": "4",
+      "bot_name": "bot_8",
+      "api_key": "ITLBQ3OLRK6G01KC",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot6@gmail.com",
+      "channel": "1",
+      "bot_name": "bot_9",
+      "api_key": "4VXL38WNH3P26AF9",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot6@gmail.com",
+      "channel": "2",
+      "bot_name": "bot_10",
+      "api_key": "2DXP7BN8T8EMVOXM",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot6@gmail.com",
+      "channel": "3",
+      "bot_name": "bot_11",
+      "api_key": "ZNXCFF53SHPN6CFC",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot6@gmail.com",
+      "channel": "4",
+      "bot_name": "bot_12",
+      "api_key": "ZBSCBYA44RKKVI8P",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot7@gmail.com",
+      "channel": "1",
+      "bot_name": "bot_13",
+      "api_key": "XO0W03M1YOTFKNWE",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot7@gmail.com",
+      "channel": "2",
+      "bot_name": "bot_14",
+      "api_key": "R1OEE8GMFVAKWBSE",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot7@gmail.com",
+      "channel": "3",
+      "bot_name": "bot_15",
+      "api_key": "6EMXL3CMYHZ9R9T6",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot7@gmail.com",
+      "channel": "4",
+      "bot_name": "bot_16",
+      "api_key": "8MTLGVQ4K9LWYL9P",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot8@gmail.com",
+      "channel": "1",
+      "bot_name": "bot_17",
+      "api_key": "RA0KOFJP0ZU8HO9T",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot8@gmail.com",
+      "channel": "2",
+      "bot_name": "bot_18",
+      "api_key": "MRRFQPTIZVLW979E",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot8@gmail.com",
+      "channel": "3",
+      "bot_name": "bot_19",
+      "api_key": "GZAKMTVN1DOX195D",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot8@gmail.com",
+      "channel": "4",
+      "bot_name": "bot_20",
+      "api_key": "EJ02ZMTKMNJFGGWT",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot9@gmail.com",
+      "channel": "1",
+      "bot_name": "bot_21",
+      "api_key": "HTETEM5HK5U37PGH",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot9@gmail.com",
+      "channel": "2",
+      "bot_name": "bot_22",
+      "api_key": "9KE3WXNCAGN6FQ2V",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot9@gmail.com",
+      "channel": "3",
+      "bot_name": "bot_23",
+      "api_key": "732A9629QW34FON3",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot9@gmail.com",
+      "channel": "4",
+      "bot_name": "bot_24",
+      "api_key": "1M2XZPPA2W54XW8B",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot10@mail.ru",
+      "channel": "1",
+      "bot_name": "bot_25",
+      "api_key": "J1YMFJKFPHZ9JGZW",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot10@mail.ru",
+      "channel": "2",
+      "bot_name": "bot_26",
+      "api_key": "EK46M6Z8LM8I912L",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot10@mail.ru",
+      "channel": "3",
+      "bot_name": "bot_27",
+      "api_key": "NYQZOMG9ZK7OW41U",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot10@mail.ru",
+      "channel": "4",
+      "bot_name": "bot_28",
+      "api_key": "WQDIGF8N0MC9UYU8",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot11@mail.ru",
+      "channel": "1",
+      "bot_name": "bot_29",
+      "api_key": "RMJPM06JEJY32JC7",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot11@mail.ru",
+      "channel": "2",
+      "bot_name": "bot_30",
+      "api_key": "MPVJJ9OR7A5J1WEU",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot11@mail.ru",
+      "channel": "3",
+      "bot_name": "bot_31",
+      "api_key": "KY8CRFZ2EJO86RNL",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    },
+    {
+      "email": "ecomoniot11@mail.ru",
+      "channel": "4",
+      "bot_name": "bot_32",
+      "api_key": "1HYQR35R54ULWDOM",
+      "update_time": "60",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field4"
+          }
+        },
+        {
+          "O3": {
+            "field": "field5"
+          }
+        },
+        {
+          "NH3": {
+            "field": "field6"
+          }
+        },
+        {
+          "H2S": {
+            "field": "field7"
+          }
+        },
+        {
+          "CO2": {
+            "field": "field8"
           }
         }
       ]
