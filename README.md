@@ -33,7 +33,7 @@ Is a dict with parameters for all bots and all sensors.
 {"bots": [conf_bot_1, ..., conf_bot_n]} - high level structure of config  
   
 ### conf_bot_n
-```json
+
 {  
   "email": email_address ,  
   "channel": channel_num,  
@@ -42,7 +42,7 @@ Is a dict with parameters for all bots and all sensors.
   "update_time": update_time,  
   "sensors": [sensor_1, ..., sensor_n]  
  }  
- ```
+
 
 - "email" - **Required.** Email address of account thingspeak account where the bot was created
 - "channel" - **Required.** Number of channel of bot on thingspeak service
@@ -52,15 +52,15 @@ Is a dict with parameters for all bots and all sensors.
 - "sensors" - **Required.** A list of sensors configs
 
 ### sensor_n
-```json
+
 {  
   sensor_name: {sensor_conf}  
 }  
- ```
+
 - sensor_name - **Required.** Nov avaliable: "Temperature", "Humidity", "Pressure", "PM2.5", "PM10", "CO", "SO2", "NO2", "O3", "NH3", "H2S", "CO2"  
   
 ### sensor_conf  
-```json
+
 {  
   "field": field,  
   "min_val": min_val,  
@@ -68,7 +68,7 @@ Is a dict with parameters for all bots and all sensors.
   "tend": tend,  
   "start_value": start_value  
 }  
- ```
+
 - field - **Required.** Number of field of the channel on thingspeak account  
 - min_val - **Optional.** Minimum measurement limit for the sensor. Default value depend on sensor type  
 - max_val - **Optional.** Maximum measurement limit for the sensor. Default value depend on sensor type  
