@@ -1,4 +1,4 @@
-from bot import Bot
+from Bot.bot import Bot
 import time
 
 

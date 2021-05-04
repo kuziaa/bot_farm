@@ -1,6 +1,5 @@
-import math
 import time
-from sensors import SENSORS
+from Sensors.sensors import SENSORS
 import requests
 
 
@@ -78,12 +77,9 @@ class Bot:
         for num, sensor in enumerate(self.sensors):
             values += f'&field{num+1}={sensor.current_value}'
         url = f'https://api.thingspeak.com/update?api_key={self.api_key}{values}'
-        r = requests.get(url)
+        requests.get(url)
         self.next_send_time = time.time() + self.update_time
         print(f"{self.bot_name} - update all values")
-        # print(f'url: {url}')
-        # print(f'status code: {r.status_code}')
-        # print(f'text: {r.text}')
         print('____________________________________________________________')
 
     def start(self) -> None:
@@ -91,5 +87,3 @@ class Bot:
 
         self.measure_all_sensors()
         self.send_all_values()
-        self.last_send_time = time.time()
-

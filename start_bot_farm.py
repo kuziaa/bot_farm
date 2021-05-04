@@ -1,6 +1,6 @@
 import os
 import json
-from bot_farm import BotFarm
+from Bot_farm.bot_farm import BotFarm
 
 
 def json_files_from_folder(folder: str) -> list:
