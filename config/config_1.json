@@ -1,0 +1,57 @@
+{
+  "bots": [
+    {
+      "email": "ecomoniot3@gmail.com",
+      "channel": "1",
+      "bot_name": "bot_1",
+      "api_key": "JP8A6VDLKRU2KQY6",
+      "update_time": "30",
+      "sensors": [
+        {
+          "temperature": {
+            "field": "field1",
+            "min_val": "-40",
+            "max_val": "50",
+            "tend": "normal",
+            "start_value": "25"
+          }
+        },
+        {
+          "humidity": {
+            "field": "field2"
+          }
+        },
+        {
+          "pressure": {
+            "field": "field3"
+          }
+        },
+        {
+          "PM2.5": {
+            "field": "field4"
+          }
+        },
+        {
+          "PM10": {
+            "field": "field5"
+          }
+        },
+        {
+          "CO": {
+            "field": "field6"
+          }
+        },
+        {
+          "SO2": {
+            "field": "field7"
+          }
+        },
+        {
+          "NO2": {
+            "field": "field8"
+          }
+        }
+      ]
+    }
+  ]
+}

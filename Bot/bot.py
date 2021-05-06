@@ -77,9 +77,16 @@ class Bot:
         for num, sensor in enumerate(self.sensors):
             values += f'&field{num+1}={sensor.current_value}'
         url = f'https://api.thingspeak.com/update?api_key={self.api_key}{values}'
-        requests.get(url)
+        while True:
+            try:
+                r = requests.get(url)
+            except Exception:
+                print(f'Failed request, try again.\nStatus code: {r.status_code}\nText: {r.text}')
+            else:
+                break
         self.next_send_time = time.time() + self.update_time
         print(f"{self.bot_name} - update all values")
+        print(time.asctime())
         print('____________________________________________________________')
 
     def start(self) -> None:

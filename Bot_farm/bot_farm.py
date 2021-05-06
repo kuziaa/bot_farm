@@ -56,6 +56,7 @@ class BotFarm:
             sleep_time = val - time.time()
 
             if sleep_time > 0:
+                print(f"Sleep for: {sleep_time}")
                 time.sleep(sleep_time)
             self.bots[idx].start()
 
