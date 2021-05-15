@@ -78,10 +78,13 @@ class Bot:
             values += f'&field{num+1}={sensor.current_value}'
         url = f'https://api.thingspeak.com/update?api_key={self.api_key}{values}'
         while True:
+            attemp = 0
+            time.sleep(attemp)
+            attemp += 1
             try:
-                r = requests.get(url)
+                requests.get(url)
             except Exception:
-                print(f'Failed request, try again.\nStatus code: {r.status_code}\nText: {r.text}')
+                print(f'Failed request, try again.')
             else:
                 break
         self.next_send_time = time.time() + self.update_time
