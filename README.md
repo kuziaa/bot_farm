@@ -3,7 +3,17 @@ Is a system to simulate behaviour of Air Quality Monitoring System
 Bot Farm consists of **Bots** and the number of bots is given by **config.json** file  
 
 ## To run Bot Farm start 
-start_bot_farm.py script
+copy current repository locally  
+
+Make sure you have python3 on your machine
+
+Install all requried libraries  
+pip install -r requirements.txt  
+
+Start bot farm
+python start_bot_farm.py  
+
+Choose correct config file
 
 ## Bot
 Bot is emulate single device with sensors  
