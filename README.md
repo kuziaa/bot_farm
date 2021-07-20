@@ -8,11 +8,13 @@ copy current repository locally
 Make sure you have python3 on your machine
 
 Install all requried libraries  
+```
 pip install -r requirements.txt  
-
+```
 Start bot farm
+```
 python start_bot_farm.py  
-
+```
 Choose correct config file
 
 ## Bot
